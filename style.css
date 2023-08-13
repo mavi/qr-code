@@ -100,7 +100,6 @@ h1 {
 
 .container {
 	border-radius: 26.5px;
-	background: #434242;
 	padding: 20px;
 	width: 350px;
 	max-width: 100%;
@@ -131,7 +130,7 @@ h1 {
 }
 
 .main-btn:hover {
-	background-color: #222222;
+	background-color: #434242;
 	color: #F3EFE0;
 }
 
