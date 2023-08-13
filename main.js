@@ -17,7 +17,7 @@ function scanBtnBas() {
         generateDiv.style.display = "none";
         scanDiv.style.display = "block";
     }
-    scanBtn.style.backgroundColor = "#222222";
+    scanBtn.style.backgroundColor = "#434242";
     scanBtn.style.color = "#F3EFE0";
     generateBtn.style.backgroundColor = "";
     generateBtn.style.color = "";
@@ -28,7 +28,7 @@ function generateBtnBas() {
         generateDiv.style.display = "block";
         scanDiv.style.display = "none";
     }
-    generateBtn.style.backgroundColor = "#222222";
+    generateBtn.style.backgroundColor = "#434242";
     generateBtn.style.color = "#F3EFE0";
     scanBtn.style.backgroundColor = "";
     scanBtn.style.color = "";
