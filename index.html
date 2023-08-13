@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <script
+        src="https://kit.fontawesome.com/3da1a747b2.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>QR Code</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1> QR Code</h1>
+        <div class="firstbuttons" style="visibility: visible">
+            <button class="main-btn" id="scanbtn">Scan</button>
+            <button class="main-btn" id="generatebtn">Generate</button>
+        </div>
+        <div class="tools">
+
+            <div class="scan" id="scandiv" style="display: none;">
+                <form action="#">
+                    <img src="#" alt="qr-code">
+                    <input type="file" hidden>
+                    <div class="content" id="firstscan">
+                      <i class="fas fa-cloud-upload"></i>
+                      <p>Upload QR Code to Scan.</p>
+                    </div>
+                </form>
+                <div class="result" id="results" style="display: none;">
+                    <textarea spellcheck="false" disabled></textarea>
+                    <div class="resultbtns">
+                        <button class="main-btn" id="close">
+                            Close
+                        </button>
+                        <button class="main-btn" id="copy">
+                            Copy
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="generate" id="generatediv" style="display: none;">
+                <input class="textarea" id="urlinput" type="text" placeholder="Enter url/text and press Enter.">
+                <div class="generated-qrcode" id="generatedqrcode" style="display: none;">
+                    <img class="qrcode" src="qr-code.png"/>
+                </div>
+                <button class="main-btn" id="generatebtn2" style="display: none;">Proceed</button>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://github.com/mavi/qr-tool">  
+        <button class="floating-btn">
+        Support this project on GitHub!
+        </button>
+    </a>
+
+<script src="main.js"></script>
+</body>
+</html>
