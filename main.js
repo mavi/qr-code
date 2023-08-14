@@ -47,12 +47,11 @@ fileInp.addEventListener("change", async e => {
     let formData = new FormData();
     formData.append('file', file);
     fetchRequest(file, formData);
-    console.log("her şey yolunda 1");
 });
 
 function fetchRequest(file, formData) {
     infoText.innerText = "Scanning QR Code...";
-    fetch("http://api.qrserver.com/v1/read-qr-code/", {
+    fetch("https://api.qrserver.com/v1/read-qr-code/", {
         method: 'POST', body: formData
     }).then(res => res.json()).then(result => {
         result = result[0].symbol[0].data;
@@ -60,7 +59,6 @@ function fetchRequest(file, formData) {
         if(!result) return;
         document.querySelector("textarea").innerText = result;
         form.querySelector("img").src = URL.createObjectURL(file);
-        console.log("her şey yolunda 2");
         document.getElementById("firstscan").style.display = "none";
         form.querySelector("img").style.display = "block";
         document.getElementById("results").style.display = "block";
